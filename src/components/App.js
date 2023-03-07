@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import Product from "./Product";
-import Footer from "./Footer";
+
 import JSON from "./db.json"
 
 
@@ -27,7 +27,7 @@ class App extends Component {
             <>
                 <Header userInput={(data)=>{this.filterData(data)}}/>
                 <Product productData={this.state.filterData}/>
-                <Footer year="2023" month="March"/>
+               
             </>
         )
     }
